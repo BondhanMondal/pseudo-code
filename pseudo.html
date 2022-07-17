@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo</title>
+    <style>
+        h1:hover{
+            color: bisque;
+            background-color: mediumvioletred;
+            margin: 10px;
+            padding: 10px;
+            font-weight: 700px;
+        }
+        .middle:focus{
+            color: royalblue;
+            font-weight: 700;
+        }
+        a:visited{
+            color: red;
+        }
+
+        li:last-child{
+            background-color: aquamarine;
+        }
+        li:first-child{
+            color: aquamarine;
+        }
+        li:nth-child(n){
+            color: blueviolet;
+        }
+        li:nth-child(2n){
+            background-color: coral;
+        }
+        li:nth-child(2n+1){
+            font-size: 30px;
+        }
+
+        h3::before{
+            content: 'Hello ';
+        }
+        h3::after{
+            content: 'gelo';
+            font-size: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>This is normal</h1>
+    <input type="text">
+    <input class="middle" type="text">
+    <input type="text">
+
+    <br>
+
+    <a href="https://www.google.com/">Google e jao</a>
+    <a href="https://www.youtube.com/">Youtube e jao</a>
+    <a href="https://www.underconsideration.com/brandnew/">new e jao</a>
+
+    <br>
+
+    <ul>
+        <li>Abcd-1</li>
+        <li>Abcd-2</li>
+        <li>Abcd-3</li>
+        <li>Abcd-4</li>
+        <li>Abcd-5</li>
+        <li>Abcd-6</li>
+        <li>Abcd-7</li>
+        <li>Abcd-8</li>
+        <li>Abcd-9</li>
+    </ul>
+
+    <h3>Middle size header -1</h3>
+    <h3>Middle size header -2</h3>
+    <h3>Middle size header -3</h3>
+    <h3>Middle size header -4</h3>
+    <h3>Middle size header -5</h3>
+    <h3>Middle size header -6</h3>
+    
+</body>
+</html>
